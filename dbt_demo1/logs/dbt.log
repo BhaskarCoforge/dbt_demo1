@@ -1,0 +1,144 @@
+[0m16:13:30.732895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5898CD190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58C41B4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58C41BCB0>]}
+
+
+============================== 16:13:30.736406 | 2729b101-fa44-416d-b888-d8be3009478c ==============================
+[0m16:13:30.736406 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:13:30.736406 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Bhaskar.Joshi\\course1\\dbt_demo1\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Bhaskar.Joshi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:13:30.785845 [info ] [MainThread]: dbt version: 1.9.1
+[0m16:13:30.792898 [info ] [MainThread]: python version: 3.12.7
+[0m16:13:30.795984 [info ] [MainThread]: python path: C:\Users\Bhaskar.Joshi\course1\venv\Scripts\python.exe
+[0m16:13:30.795984 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:13:31.566774 [info ] [MainThread]: Using profiles dir at C:\Users\Bhaskar.Joshi\.dbt
+[0m16:13:31.573414 [info ] [MainThread]: Using profiles.yml file at C:\Users\Bhaskar.Joshi\.dbt\profiles.yml
+[0m16:13:31.575028 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Bhaskar.Joshi\course1\dbt_demo1\dbt_project.yml
+[0m16:13:31.575028 [info ] [MainThread]: adapter type: snowflake
+[0m16:13:31.580138 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:13:31.773311 [info ] [MainThread]: Configuration:
+[0m16:13:31.779206 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:13:31.779206 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:13:31.783314 [info ] [MainThread]: Required dependencies:
+[0m16:13:31.786861 [debug] [MainThread]: Executing "git --help"
+[0m16:13:31.795888 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:13:31.802965 [info ] [MainThread]: Connection:
+[0m16:13:31.802965 [info ] [MainThread]:   account: hyijext/sh82120
+[0m16:13:31.802965 [info ] [MainThread]:   user: dbt
+[0m16:13:31.802965 [info ] [MainThread]:   database: RAW
+[0m16:13:31.802965 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m16:13:31.802965 [info ] [MainThread]:   role: TRANSFORM
+[0m16:13:31.802965 [info ] [MainThread]:   schema: AIRBNB
+[0m16:13:31.802965 [info ] [MainThread]:   authenticator: None
+[0m16:13:31.802965 [info ] [MainThread]:   oauth_client_id: None
+[0m16:13:31.802965 [info ] [MainThread]:   query_tag: None
+[0m16:13:31.802965 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:13:31.802965 [info ] [MainThread]:   host: None
+[0m16:13:31.802965 [info ] [MainThread]:   port: None
+[0m16:13:31.811122 [info ] [MainThread]:   proxy_host: None
+[0m16:13:31.813175 [info ] [MainThread]:   proxy_port: None
+[0m16:13:31.813175 [info ] [MainThread]:   protocol: None
+[0m16:13:31.815400 [info ] [MainThread]:   connect_retries: 1
+[0m16:13:31.815400 [info ] [MainThread]:   connect_timeout: None
+[0m16:13:31.815400 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:13:31.815400 [info ] [MainThread]:   retry_all: False
+[0m16:13:31.815400 [info ] [MainThread]:   insecure_mode: False
+[0m16:13:31.815400 [info ] [MainThread]:   reuse_connections: True
+[0m16:13:31.819410 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:13:32.618057 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:13:33.083509 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:13:33.086064 [debug] [MainThread]: On debug: select 1 as id
+[0m16:13:33.086064 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:13:50.196168 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m16:13:50.196168 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m16:13:50.196168 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:13:50.265723 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:13:50.284238 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:13:50.340442 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:13:50.359565 [debug] [MainThread]: Command `dbt debug` failed at 16:13:50.359565 after 20.30 seconds
+[0m16:13:50.365138 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:13:50.366394 [debug] [MainThread]: On debug: No close available on handle
+[0m16:13:50.366394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58C41B4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58D560170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58C5DADE0>]}
+[0m16:13:50.366394 [debug] [MainThread]: Flushing usage events
+[0m16:13:50.864263 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:37:26.755450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABF295430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABF296420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABF295880>]}
+
+
+============================== 19:37:26.760557 | 423d59e3-f4fc-4418-a906-25ac38334787 ==============================
+[0m19:37:26.760557 [info ] [MainThread]: Running with dbt=1.9.1
+[0m19:37:26.765644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Bhaskar.Joshi\\course1\\dbt_demo1', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Bhaskar.Joshi\\course1\\dbt_demo1\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:37:26.809432 [info ] [MainThread]: dbt version: 1.9.1
+[0m19:37:26.811383 [info ] [MainThread]: python version: 3.12.7
+[0m19:37:26.811383 [info ] [MainThread]: python path: C:\Users\Bhaskar.Joshi\course1\venv\Scripts\python.exe
+[0m19:37:26.812420 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m19:37:27.360418 [info ] [MainThread]: Using profiles dir at C:\Users\Bhaskar.Joshi\course1\dbt_demo1
+[0m19:37:27.363433 [info ] [MainThread]: Using profiles.yml file at C:\Users\Bhaskar.Joshi\course1\dbt_demo1\profiles.yml
+[0m19:37:27.363433 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Bhaskar.Joshi\course1\dbt_demo1\dbt_project.yml
+[0m19:37:27.365445 [info ] [MainThread]: adapter type: snowflake
+[0m19:37:27.365445 [info ] [MainThread]: adapter version: 1.9.0
+[0m19:37:27.473670 [info ] [MainThread]: Configuration:
+[0m19:37:27.474686 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:37:27.475719 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:37:27.476302 [info ] [MainThread]: Required dependencies:
+[0m19:37:27.477365 [debug] [MainThread]: Executing "git --help"
+[0m19:37:27.485621 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m19:37:27.485621 [info ] [MainThread]: Connection:
+[0m19:37:27.489718 [info ] [MainThread]:   account: hyijext/sh82120
+[0m19:37:27.490430 [info ] [MainThread]:   user: dbt
+[0m19:37:27.491481 [info ] [MainThread]:   database: RAW
+[0m19:37:27.491481 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m19:37:27.492481 [info ] [MainThread]:   role: TRANSFORM
+[0m19:37:27.493697 [info ] [MainThread]:   schema: AIRBNB
+[0m19:37:27.493821 [info ] [MainThread]:   authenticator: None
+[0m19:37:27.495367 [info ] [MainThread]:   oauth_client_id: None
+[0m19:37:27.497779 [info ] [MainThread]:   query_tag: None
+[0m19:37:27.498790 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:37:27.498790 [info ] [MainThread]:   host: None
+[0m19:37:27.499828 [info ] [MainThread]:   port: None
+[0m19:37:27.500833 [info ] [MainThread]:   proxy_host: None
+[0m19:37:27.500833 [info ] [MainThread]:   proxy_port: None
+[0m19:37:27.501791 [info ] [MainThread]:   protocol: None
+[0m19:37:27.502410 [info ] [MainThread]:   connect_retries: 1
+[0m19:37:27.503266 [info ] [MainThread]:   connect_timeout: None
+[0m19:37:27.503266 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:37:27.503266 [info ] [MainThread]:   retry_all: False
+[0m19:37:27.505786 [info ] [MainThread]:   insecure_mode: False
+[0m19:37:27.505786 [info ] [MainThread]:   reuse_connections: True
+[0m19:37:27.505786 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m19:37:27.959010 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:37:28.235573 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:37:28.235573 [debug] [MainThread]: On debug: select 1 as id
+[0m19:37:28.235573 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:37:45.017945 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m19:37:45.018871 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m19:37:45.018871 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:37:45.019870 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:37:45.020870 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m19:37:45.021870 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:37:45.023875 [debug] [MainThread]: Command `dbt debug` failed at 19:37:45.023875 after 18.53 seconds
+[0m19:37:45.023875 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:37:45.023875 [debug] [MainThread]: On debug: No close available on handle
+[0m19:37:45.023875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABF295880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025ABFF62AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AC00EA420>]}
+[0m19:37:45.025496 [debug] [MainThread]: Flushing usage events
+[0m19:37:46.615789 [debug] [MainThread]: An error was encountered while trying to flush usage events
